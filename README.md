@@ -23,5 +23,5 @@ Not only did we learn new coding skills, but also we felt the deep connection of
 
  # Contributions:
 
- Aya Dassouki<b> Lara Koshal
+ Aya Dassouki</n> Lara Koshal
 
