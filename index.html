@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webpage Layout</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+   
+    <nav class="navbar">
+      <h1 class="title">Winter Made Easy</h1>
+      <a href="index.html">HOME</a>
+      <a href="hazard.html">REPORT A HAZARD</a>
+      <a href="volunteer.html">VOLUNTEER</a>
+      <a href="emergency.html">EMERGENCY CONTACTS</a>
+    </nav>
+    <div class="content-container">
+      <div class="main-container">
+        <div id="map" class="left-box">Map will be loaded here</div>
+      </div>
+      <div class="side-container">
+        <div class="right-box">
+          Up to date status
+          <br />
+          📍
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+      defer
+    ></script>
+    <script src="snowfinder.js"></script>
+  </body>
+</html>

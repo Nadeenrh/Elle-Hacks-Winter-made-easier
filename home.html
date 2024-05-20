@@ -1,0 +1,29 @@
+<div id="real-time-updates">
+  <h2>Real-Time Updates</h2>
+  <ul id="update-list">
+    <!-- Real-time update items populated by JavaScript or server-side code -->
+  </ul>
+</div>
+
+<script>
+  // Example JavaScript to poll a server for updates (pseudo-code)
+  setInterval(function () {
+    fetch("/get-latest-updates")
+      .then((response) => response.json())
+      .then((data) => updateUI(data))
+      .catch((error) => console.error("Error fetching updates:", error));
+  }, 5000); // Poll every 5 seconds
+
+  function updateUI(updates) {
+    // Update the UI with the new updates
+    const updateList = document.getElementById("update-list");
+    // Clear current updates
+    updateList.innerHTML = "";
+    // Add new updates
+    updates.forEach((update) => {
+      const listItem = document.createElement("li");
+      listItem.textContent = update.message + " - " + update.timestamp;
+      updateList.appendChild(listItem);
+    });
+  }
+</script>
